@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SeriviceegistryApplication<seriviceegistry>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.valverde.seriviceegistry.SeriviceegistryApplication",
+            "projectName": "seriviceegistry",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-InfraccionserviceApplication<infraccionservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.valverde.infraccionservice.InfraccionserviceApplication",
+            "projectName": "infraccionservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=56999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=infraccionservice"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApigatewayApplication<apigateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.valverde.apigateway.ApigatewayApplication",
+            "projectName": "apigateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
